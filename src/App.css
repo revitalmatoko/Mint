@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -35,4 +38,51 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.searchBar {
+  width: 50%;
+  display: flex;
+}
+.searchInput {
+  flex: 1;
+}
+.iconButton {
+  margin-top: 9px !important;
+}
+
+.storeCard:hover {
+  background-color: grey;
+}
+
+.storeCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.storeCard .imgPart {
+  border: 1px solid grey;
+  border-radius: 2px;
+  flex: 2;
+  position: relative;
+}
+
+.storeCard .imgPart .favoriteIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.storeCard .contentPart {
+  border: 1px solid grey;
+  border-radius: 2px;
+  flex: 1;
+}
+
+.storeCard .contentPart .storeName {
+  margin-top: 0;
+}
+
+.storeCard .contentPart .floorName {
+
 }
